@@ -1,5 +1,3 @@
-![GitHub License](https://img.shields.io/github/license/:user/:repo)
-
 # materiais-esportivos
 Este repositório hospeda o projeto do site materiaisesportivos.com
 ## Author 
