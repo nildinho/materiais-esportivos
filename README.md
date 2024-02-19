@@ -1,3 +1,6 @@
+![GitHub License](https://img.shields.io/github/license/nildinho/materiais-esportivos)
+
+
 # materiais-esportivos
 Este repositório hospeda o projeto do site materiaisesportivos.com
 ## Author 
