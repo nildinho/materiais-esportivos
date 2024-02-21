@@ -1,53 +1,119 @@
 /**
-folha de estilo do site Materiais Esportivos
+dolha de estilo materiais esportivos
 @author Vanildo Lima
-*/ 
-
-/* CSS RESET */ 
-*{
+/* importar fonts */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+ 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Siliguri:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+ 
+ /** variaveis globais */
+:root {
+    --azulLayout: #00FFFF;
+    --branco: #000000;
+}
+ 
+/* CSS RESET */
+    *{
     margin: 0;
     padding: 0;
     border: 0;
-
+ 
 }
-
-/* importar fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Siliguri:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
-
-
-body{
-    font-family: "Bebas Neue" , "Hind Siliguri";
+ 
+/** importar fonte */
+  
+html {
+    scroll-behavior: smooth;
+}
+ 
+body {
+    font-family: "Bebas Neue", "Hind Siliguri";
     font-size: 1em;
 }
-
-
-
-/* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>> */
-
-/* Smartphone landscape >>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 576px) {
-    
+ 
+.container {
+ 
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
 }
-
-/* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 768px) {
-   
+ 
+.flex {
+    display: flex;
+    flex-direction: column;
 }
-
-/* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 992px) {
-   
+ 
+/** Smartphone portrait >>>>>>>>>>>>>>>>>*/
+/************ Cabeçalho *******************/
+#logo img {
+    width: 230px;
+    height: 60px;
 }
+ /************ rodapé ***************/
 
-/* PCs ou notebooks HD + >>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 1200px) {
-   
+footer {
+    background-color: var(--azulLayout);
+    color: var(--branco);
+    text-align: center;
 }
+#social {
+    margin-bottom: 25px;
+}
+ 
+/** smartphone landscape>>>>>>>>>>>>>>>>>*/
+@media(min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    .flex {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-/* PCs, notebooks ou Tv Full HD + >>>>>>>>>>>> */
-@media (min-width: 1400px) {
-   
+    #social{
+       margin: 0;
+
+    }
+}
+ 
+/** tablet portrait >>>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 768px) {
+    .container {
+        max-width: 720px;
+ 
+    }
+}
+ 
+/** tablet landscape >>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 992px) {
+    .container {
+        max-width: 960px;
+ 
+    }
+}
+ 
+/** PC ou notebooks HD >>>>>>>>>>>>>>>>>>*/
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+ 
+    }
+ 
+    #social {
+        background-color:aqua;
+    }
+ 
+    #copyright {
+        background-color: aqua;
+    }
+ 
+    /* PCs ou notebooks TV Full HD >>>>>>>>>>>>>*/
+    @media(min-width: 1400px) {
+        .container {
+            max-width: 1360px;
+ 
+        }
+ 
+    }
 }
