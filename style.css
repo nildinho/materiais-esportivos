@@ -10,7 +10,12 @@ dolha de estilo materiais esportivos
 /** variaveis globais */
 :root {
     --azulLayout: #00FFFF;
-    --branco: #000000;
+    --cinzaTexto: #808080;
+    --preto: #000000;
+    --backgroundCard: #f1f3f4;
+    --bordaLayout: #a1a1a1;
+    --vermelhoLayout: #c00000;
+    --BrancoLayout: #ffffff;
 }
 
 /* CSS RESET */
@@ -21,7 +26,7 @@ dolha de estilo materiais esportivos
 
 }
 
-/** importar fonte */
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>>> c*/
 
 html {
     scroll-behavior: smooth;
@@ -38,23 +43,77 @@ body {
     padding: 50px 15px 50px 15px;
 }
 
+.Flex,
+.FlexMenu {
+    display: Flex;
+    justify-content: space-between;
+}
+
 .Flex {
-    display: flex;
+
     flex-direction: column;
 }
 
+/*cartão*/
+
+.Card {
+    margin-top: 100px;
+    width: 330px;
+    height: 520px;
+    background-color: var(--backgroundCard);
+    border: 2px solid var(--bordaLayout);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.Card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3 {
+    margin: 15px 30px 0px 0px;
+}
+
+.Card p {
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+    color: var(--cinzaTexto);
+}
+
+.Button {
+    text-decoration: none;
+    background-color: var(--vermelhoLayout);
+    color: var(--BrancoLayout);
+    padding: 1px 20px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+
+}
+
+
+
+
+
 /** Smartphone portrait >>>>>>>>>>>>>>>>>*/
 /************ Cabeçalho *******************/
+
+header {
+    height: 80px;
+    background-color: aqua;
+}
+
 #logo img {
-    width: 64px;
-    height: 64px;
+    width: 68px;
+    height: 68px;
+    margin: 10px 0px 0px 10px;
 }
 
 /************ rodapé ***************/
 
 footer {
     background-color: var(--azulLayout);
-    color: var(--preto);
+    color: var(--pretoLayout);
     text-align: center;
 }
 
@@ -64,13 +123,21 @@ footer {
 
 /** smartphone landscape>>>>>>>>>>>>>>>>>*/
 @media(min-width: 576px) {
+
+    /* Layout */
     .Container {
         max-width: 540px;
     }
 
+    /* Cabeçalho */
+    header {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
     .Flex {
         flex-direction: row-reverse;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -82,33 +149,74 @@ footer {
 
 /** tablet portrait >>>>>>>>>>>>>>>>>>>>>*/
 @media(min-width: 768px) {
-    .container {
-        max-width: 720px;
 
+    /*Layout */
+    .Container {
+        max-width: 720px;
     }
+
+    /* Cabeçalho */
+    header {
+        max-width: 720px;
+        height: 100px;
+        background-color: chartreuse;
+    }
+
+    #logo img {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0px 0px 10px;
+    }
+
 }
+
 
 /** tablet landscape >>>>>>>>>>>>>>>>>>>>*/
-@media(min-width: 992px) {
-    .container {
+@media (min-width: 992px) {
+
+    /* Layout */
+    .Container {
         max-width: 960px;
+    }
 
+    /* Cabeçalho */
+    header {
+        max-width: 992px;
     }
 }
 
-/** PC ou notebooks HD >>>>>>>>>>>>>>>>>>*/
-@media(min-width: 1200px) {
-    .container {
+/* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+
+    /* Layout */
+    .Container {
         max-width: 1140px;
+    }
 
+    /* Cabeçalho */
+    header {
+        max-width: 1140px;
+        height: 125px;
+        background-color: chocolate;
+    }
+
+    #logo img {
+        width: 204px;
+        height: 204px;
     }
 }
 
-/* PCs ou notebooks TV Full HD >>>>>>>>>>>>>*/
-@media(min-width: 1400px) {
-    .container {
-        max-width: 1360px;
+/* PCs, notebooks ou Tv Full HD + >>>> */
+@media (min-width: 1400px) {
 
+    /* Cabeçalho */
+    header {
+        height: 150px;
+        background-color: crimson
     }
 
+    #logo img {
+        width: 136px;
+        height: 136px;
+    }
 }
