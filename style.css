@@ -91,6 +91,13 @@ body {
 
 }
 
+/* Topo */
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
 
 
 
@@ -107,6 +114,47 @@ header {
     width: 68px;
     height: 68px;
     margin: 10px 0px 0px 10px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    position: fixed;
+    top: 25px;
+    right: 3px;
+    color: rgba(60, 60, 60, 0.6);
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgba(60, 60, 60, 0.95);
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    right: -70%;
+    /*estratégia para recolher o menu*/
+    width: 70%;
+    transition: all 0.5s;
+}
+
+/* ativar o checkbox refernte a ul*/
+#check:checked~ul {
+    right: 0;
+}
+
+nav ul li {
+    border-bottom: 0.5px solid var(--backgroundCard);
+    text-align: right;
+    padding: 15px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--brancoLayout)
 }
 
 /************ rodapé ***************/
@@ -159,13 +207,25 @@ footer {
     header {
         max-width: 720px;
         height: 100px;
-        background-color: chartreuse;
+        background-color: aqua;
+    }
+
+    label {
+        font-size: 4em;
+        top: 25px;
+        right: 5px;
     }
 
     #logo img {
         width: 100px;
         height: 100px;
         margin: 10px 0px 0px 10px;
+    }
+
+    nav ul {
+        top: 100px;
+        right: -50%;
+        width: 50%;
     }
 
 }
@@ -197,12 +257,37 @@ footer {
     header {
         max-width: 1140px;
         height: 125px;
-        background-color: chocolate;
+        background-color: aqua;
     }
 
     #logo img {
         width: 204px;
         height: 204px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+        position: static;
+        height: auto;
+        background-color: var(--BrancoLayout);
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        border: 0;
+        float: left;
+    }
+
+    nav ul li a {
+        color: var(--cinzaLayout);
+    }
+
+    nav ul li a:hover {
+        color: var(--vermelhoLayout)
     }
 }
 
@@ -212,11 +297,10 @@ footer {
     /* Cabeçalho */
     header {
         height: 150px;
-        background-color: crimson
+        background-color: aqua;
     }
-
     #logo img {
-        width: 136px;
-        height: 136px;
+            width: 136px;
+            height: 136px;
+        }
     }
-}
