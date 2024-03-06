@@ -52,18 +52,19 @@ body {
 .Flex {
 
     flex-direction: column;
+
 }
 
 /*cartão*/
 
 .Card {
-        margin-top: 30px;
-        width: 300px;
-        height: 450px;
-        background-color: var(--backgroundCard);
-        border: 1px solid var(--bordaLayout);
-        border-radius: 25px;
-        text-align: center;
+    margin-top: 30px;
+    width: 300px;
+    height: 450px;
+    background-color: var(--backgroundCard);
+    border: 1px solid var(--bordaLayout);
+    border-radius: 25px;
+    text-align: center;
 }
 
 .Card img {
@@ -103,11 +104,13 @@ body {
 
 
 /** Smartphone portrait >>>>>>>>>>>>>>>>>*/
+
 /************ Cabeçalho *******************/
 
 header {
     height: 80px;
     background-color: aqua;
+
 }
 
 #logo img {
@@ -157,6 +160,33 @@ nav ul li a {
     color: var(--BrancoLayout);
 }
 
+/* banner */
+main {
+    background: url(img/banner.webp);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+main h1,
+h2 {
+    color: var(--preto);
+
+}
+
+main h1 {
+    font-family: "Bebas Neue", "Hind Siliguri";
+    font-weight: 700;
+    margin: 0;
+    color: var(--preto);
+}
+
+main h2 {
+    display: inline;
+    color: var(--BrancoLayout);
+}
+
 /************ rodapé ***************/
 
 footer {
@@ -189,6 +219,16 @@ footer {
         align-items: center;
     }
 
+    /* Banner */
+    main {
+        height: 80vh;
+    }
+
+    main h1 {
+        font-size: 2.0em;
+    }
+
+    /* Rodapé */
     #social {
         margin: 0;
 
@@ -201,34 +241,59 @@ footer {
     /*Layout */
     .Container {
         max-width: 720px;
-    }
-
-    /* Cabeçalho */
-    header {
-        max-width: 720px;
-        height: 100px;
-        background-color: aqua;
-    }
-
-    label {
-        font-size: 4em;
-        top: 25px;
-        right: 5px;
-    }
-
-    #logo img {
-        width: 100px;
-        height: 100px;
-        margin: 10px 0px 0px 10px;
-    }
-
-    nav ul {
-        top: 100px;
-        right: -50%;
-        width: 50%;
-    }
-
 }
+}
+
+/* Cabeçalho */
+header {
+    max-width: 720px;
+    height: 100px;
+    background-color: aqua;
+}
+
+label {
+    font-size: 4em;
+    top: 25px;
+    right: 5px;
+}
+
+#logo img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0px 0px 10px;
+}
+
+nav ul {
+    top: 100px;
+    right: -50%;
+    width: 50%;
+}
+
+/* Banner */
+main h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+main h2 {
+    display: block;
+    font-size: 1.5em;
+    font-size: 1em;
+    margin-bottom: 25px;
+}
+
+main a {
+    margin-top: 50px;
+}
+
+label {
+    font-size: 4em;
+    top: 25px;
+    height: 5px;
+    color: rgba(67, 67, 67, 0.9);
+}
+
 
 
 /** tablet landscape >>>>>>>>>>>>>>>>>>>>*/
@@ -257,7 +322,6 @@ footer {
     header {
         max-width: 1140px;
         height: 125px;
-        background-color: aqua;
     }
 
     #logo img {
@@ -291,6 +355,18 @@ footer {
     }
 }
 
+/* Banner */
+
+main h1 {
+    font-size: 2em;
+}
+
+main h2 {
+    font-size: 1.5em;
+    text-shadow: #000000 0.5em 0.5em 0.5em;
+
+}
+
 /* PCs, notebooks ou Tv Full HD + >>>> */
 @media (min-width: 1400px) {
 
@@ -299,8 +375,9 @@ footer {
         height: 150px;
         background-color: aqua;
     }
+
     #logo img {
-            width: 136px;
-            height: 136px;
-        }
+        width: 136px;
+        height: 136px;
     }
+}
