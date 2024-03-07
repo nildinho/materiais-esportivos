@@ -16,6 +16,7 @@ dolha de estilo materiais esportivos
     --bordaLayout: #a1a1a1;
     --vermelhoLayout: #c00000;
     --BrancoLayout: #ffffff;
+    --AzulescuroLayout: #013858;
 }
 
 /* CSS RESET */
@@ -109,14 +110,14 @@ body {
 
 header {
     height: 80px;
-    background-color: aqua;
+    background-color:#ffffff;
 
 }
 
 #logo img {
-    width: 68px;
-    height: 68px;
-    margin: 10px 0px 0px 10px;
+    width: 58px;
+    height: 58px;
+    margin: 0px 0px 0px 0px;
 }
 
 #check {
@@ -162,24 +163,24 @@ nav ul li a {
 
 /* banner */
 main {
-    background: url(img/banner.webp);
-    height: 50vh;
+    background: url(img/banner.jpg);
+    height: 70vh;
     background-size: cover;
     background-position: center;
     text-align: center;
 }
 
-main h1,
-h2 {
+main h1,h2 {
     color: var(--preto);
-
+    text-shadow:#000000 7.0em 7.0em 7.0em;
+    font-size: 1.5em;
 }
 
 main h1 {
     font-family: "Bebas Neue", "Hind Siliguri";
     font-weight: 700;
     margin: 0;
-    color: var(--preto);
+    color: var(--BrancoLayout);
 }
 
 main h2 {
@@ -190,8 +191,8 @@ main h2 {
 /************ rodapé ***************/
 
 footer {
-    background-color: var(--azulLayout);
-    color: var(--pretoLayout);
+    background-color: var(--AzulescuroLayout);
+    color: var(--BrancoLayout);
     text-align: center;
 }
 
@@ -248,7 +249,7 @@ footer {
 header {
     max-width: 720px;
     height: 100px;
-    background-color: aqua;
+    background-color:#ffffff;
 }
 
 label {
@@ -258,9 +259,9 @@ label {
 }
 
 #logo img {
-    width: 100px;
-    height: 100px;
-    margin: 10px 0px 0px 10px;
+    width: 200px;
+    height: 200px;
+    margin: -50px 0px 0px -50px;
 }
 
 nav ul {
@@ -271,7 +272,7 @@ nav ul {
 
 /* Banner */
 main h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     margin-bottom: 25px;
 }
@@ -279,12 +280,11 @@ main h1 {
 main h2 {
     display: block;
     font-size: 1.5em;
-    font-size: 1em;
     margin-bottom: 25px;
 }
 
 main a {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 label {
@@ -363,7 +363,7 @@ main h1 {
 
 main h2 {
     font-size: 1.5em;
-    text-shadow: #000000 0.5em 0.5em 0.5em;
+    text-shadow:#000000 0.5em 0.5em 0.5em;
 
 }
 
@@ -373,11 +373,11 @@ main h2 {
     /* Cabeçalho */
     header {
         height: 150px;
-        background-color: aqua;
+        background-color:#ffffff;
     }
 
     #logo img {
-        width: 136px;
-        height: 136px;
+        width: 200px;
+        height: 200px; margin: -10px 0px 0px 0px;
     }
 }
