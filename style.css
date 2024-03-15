@@ -45,9 +45,11 @@ body {
 }
 
 .Flex,
-.FlexMenu {
+.FlexMenu,
+.FlexCard,
+.FlexSection {
     display: Flex;
-    justify-content: space-between;
+
 }
 
 .Flex {
@@ -55,13 +57,25 @@ body {
     flex-direction: column;
 
 }
+.FlexCard{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 10pt;
+}
+.FlexMenu{
+    justify-content: space-between;
+}
+.FlexSection{
+    align-items: center;
+    
+}
 
 /*cartão*/
 
 .Card {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 300px;
-    height: 450px;
+    height: 275px;
     background-color: var(--backgroundCard);
     border: 1px solid var(--bordaLayout);
     border-radius: 25px;
@@ -155,6 +169,12 @@ nav ul li {
     padding: 15px;
 
 }
+#s1,
+#s2,
+#s3,
+#s4 {
+    display:none
+}
 
 nav ul li a {
     text-decoration: none;
@@ -188,6 +208,94 @@ main h2 {
     color: var(--BrancoLayout);
 }
 
+/* Introdução  */
+#intro {
+    background: var(--cinzaTexto);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaqueIntro{
+    display: none;
+}
+#textointro {
+    color: var(--preto);
+}
+
+#textoIntro {
+    color: var(--preto);
+}
+
+#textoIntro h1 {
+    font-family: "Bebas Neue", "Hind Siliguri";
+    text-shadow: 0 0 0 5px var (var(--cinzaTexto));
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.TopicosIntro {
+    margin-top: 10px;
+}
+
+.TopicosIntro img {
+    margin-right: 20px;
+}
+
+#textoIntro p {
+    font-weight: 500;
+    text-shadow: 0 0 5px var(--cinzaEscuro);
+}
+
+/* Instagram */
+#instagram {
+    background: url(/img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--preto)
+}
+
+#imagemInstagram {
+    display: none;
+}
+
+#textoInstagram h2 {
+    font-family: "Bebas Neue", "Hind Siliguri";
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#textoInstagram p {
+    margin-bottom: 35px;
+}
+
+#destacado {
+    font-weight: 700;
+}
+
+#instagram .Button {
+    border: 2px solid var (--BrancoLayout);
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+
+/* projetos */
+#projetos h2 {
+    text-align: center;
+    font-family: "Bebas Neue", "Hind Siliguri";
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+#destacado2 {
+    color: var(--vermelho);
+    font-weight: 600;
+}
+
+
+
 /************ rodapé ***************/
 
 footer {
@@ -206,6 +314,12 @@ footer {
     /* Layout */
     .Container {
         max-width: 540px;
+    }
+
+    .Flex {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
     }
 
     /* Cabeçalho */
@@ -264,6 +378,13 @@ label {
     margin: -50px 0px 0px -50px;
 }
 
+ /* Menu */
+ label {
+    font-size: 4em;
+    top: 25px;
+    right: 5px;
+}
+
 nav ul {
     top: 100px;
     right: -50%;
@@ -272,14 +393,14 @@ nav ul {
 
 /* Banner */
 main h1 {
-    font-size: 1.5em;
+    font-size: 2.0em;
     font-weight: 700;
     margin-bottom: 25px;
 }
 
 main h2 {
     display: block;
-    font-size: 1.5em;
+    font-size: 2.0em;
     margin-bottom: 25px;
 }
 
@@ -296,6 +417,14 @@ label {
 
 
 
+/* Projetos */
+#projetos h2 {
+    font-size: 1.8em;
+}
+
+
+
+
 /** tablet landscape >>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
 
@@ -308,7 +437,41 @@ label {
     header {
         max-width: 992px;
     }
+      /* Introdução */
+      #destaqueIntro {
+        display: inline;
+    }
+
+    #destaqueIntro img {
+        margin-right: 50px;
+        border-radius: 50%;
+    }
+
+    /* Instagram */
+    #instagram {
+        background: none;
+        background-color: var(--cinzaMedio);
+    }
+
+    #textoInstagram p {
+        margin-right: 100px;    
+    }
+
+    #imagemInstagram {
+        display: inline;
+    }
+
+    #imagemInstagram img {
+        width: 190px;
+        height: 190px;      
+    }
+
+    /* Projetos */
+    #projetos h2 {
+        font-size: 2em;
+    }
 }
+
 
 /* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
@@ -353,6 +516,47 @@ label {
     nav ul li a:hover {
         color: var(--vermelhoLayout)
     }
+     /* Destaque */
+     #destaque {
+        height: 75vh;
+    }
+
+    #slogan {
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    #textoDestaque {
+        font-size: 1.1em;
+    }
+
+    /* Introdução */
+    #intro {
+        background-attachment: fixed;
+    }
+
+    #textoIntro h1 {
+        font-size: 2em;
+    }
+
+    /* Instagram */
+    #textoInstagram h2 {
+        font-size: 2em;
+    }
+
+    #textoInstagram p {
+        font-size: 1.25em;
+        margin-bottom: 50px;
+    }
+
+    #imagemInstagram img {
+        margin-left: 100px;        
+    }
+
+    /* Projetos */
+    #projetos h2 {
+        font-size: 2.5em;
+        font-weight: 500;       
 }
 
 /* Banner */
@@ -366,6 +570,7 @@ main h2 {
     text-shadow:#000000 0.5em 0.5em 0.5em;
 
 }
+}
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
 @media (min-width: 1400px) {
@@ -378,6 +583,7 @@ main h2 {
 
     #logo img {
         width: 200px;
-        height: 200px; margin: -30px 0px 0px 0px;
+        height: 200px; 
+        margin: -30px 0px 0px 0px;
     }
 }
