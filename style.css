@@ -39,7 +39,6 @@ body {
 }
 
 .Container {
-
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
 }
@@ -53,21 +52,22 @@ body {
 }
 
 .Flex {
-
     flex-direction: column;
 
 }
-.FlexCard{
+
+.FlexCard {
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-size: 10pt;
 }
-.FlexMenu{
+
+.FlexMenu {
     justify-content: space-between;
 }
-.FlexSection{
+
+.FlexSection {
     align-items: center;
-    
+
 }
 
 /*cartão*/
@@ -75,7 +75,7 @@ body {
 .Card {
     margin-top: 20px;
     width: 300px;
-    height: 275px;
+    height: 320px;
     background-color: var(--backgroundCard);
     border: 1px solid var(--bordaLayout);
     border-radius: 25px;
@@ -124,7 +124,7 @@ body {
 
 header {
     height: 80px;
-    background-color:#ffffff;
+    background-color: #ffffff;
 
 }
 
@@ -144,6 +144,7 @@ label {
     top: 25px;
     right: 3px;
     color: rgba(60, 60, 60, 0.6);
+    z-index: 2;
 }
 
 nav ul {
@@ -169,11 +170,12 @@ nav ul li {
     padding: 15px;
 
 }
+
 #s1,
 #s2,
 #s3,
 #s4 {
-    display:none
+    display: none
 }
 
 nav ul li a {
@@ -190,10 +192,11 @@ main {
     text-align: center;
 }
 
-main h1,h2 {
+main h1,
+h2 {
     color: var(--preto);
-    text-shadow:#000000 8.0em 8.0em 8.0em;
-    font-size: 1.7em;
+    text-shadow: #000000 8.0em 8.0em 8.0em;
+    font-size: 1.8em;
 }
 
 main h1 {
@@ -213,70 +216,43 @@ main h2 {
     background: var(--cinzaTexto);
     background-size: cover;
     background-position: center;
+    height: 400pt;
+    
 }
 
-#destaqueIntro{
+#destaqueIntro {
     display: none;
 }
+
 #textointro {
     color: var(--preto);
 }
 
-#textoIntro {
-    color: var(--preto);
-}
 
 #textoIntro h1 {
     font-family: "Bebas Neue", "Hind Siliguri";
-    text-shadow: 0 0 0 5px var (var(--cinzaTexto));
-    font-weight: 600;
+    text-shadow: 0 0 5px var(--cinzaTexto);
+    font-weight: 400;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
+
 .TopicosIntro {
     margin-top: 10px;
 }
 
 .TopicosIntro img {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 #textoIntro p {
     font-weight: 500;
-    text-shadow: 0 0 5px var(--cinzaEscuro);
+    text-shadow: 0 0 5px var(--cinzaTexto);
 }
 
-/* Instagram */
-#instagram {
-    background: url(/img/fundo.jpg);
-    background-size: cover;
-    background-position: center;
-    color: var(--preto)
-}
-
-#imagemInstagram {
-    display: none;
-}
-
-#textoInstagram h2 {
-    font-family: "Bebas Neue", "Hind Siliguri";
-    font-weight: 500;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-#textoInstagram p {
-    margin-bottom: 35px;
-}
 
 #destacado {
     font-weight: 700;
-}
-
-#instagram .Button {
-    border: 2px solid var (--BrancoLayout);
-    padding: 10px 20px;
-    font-size: 1em;
 }
 
 
@@ -328,27 +304,13 @@ footer {
         margin: 0 auto;
     }
 
-    .Flex {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* Banner */
-    main {
-        height: 85vh;
-    }
-
-    main h1 {
-        font-size: 2.0em;
-    }
-
     /* Rodapé */
     #social {
         margin: 0;
 
     }
-}
+    }
+
 
 /** tablet portrait >>>>>>>>>>>>>>>>>>>>>*/
 @media(min-width: 768px) {
@@ -356,14 +318,14 @@ footer {
     /*Layout */
     .Container {
         max-width: 720px;
-}
+    }
 }
 
 /* Cabeçalho */
 header {
     max-width: 720px;
     height: 100px;
-    background-color:#ffffff;
+    background-color: #ffffff;
 }
 
 label {
@@ -378,8 +340,8 @@ label {
     margin: -50px 0px 0px -50px;
 }
 
- /* Menu */
- label {
+/* Menu */
+label {
     font-size: 4em;
     top: 25px;
     right: 5px;
@@ -437,33 +399,15 @@ label {
     header {
         max-width: 992px;
     }
-      /* Introdução */
-      #destaqueIntro {
+
+    /* Introdução */
+    #destaqueIntro {
         display: inline;
     }
 
     #destaqueIntro img {
         margin-right: 50px;
         border-radius: 50%;
-    }
-
-    /* Instagram */
-    #instagram {
-        background: none;
-        background-color: var(--cinzaMedio);
-    }
-
-    #textoInstagram p {
-        margin-right: 100px;    
-    }
-
-    #imagemInstagram {
-        display: inline;
-    }
-
-    #imagemInstagram img {
-        width: 190px;
-        height: 190px;      
     }
 
     /* Projetos */
@@ -516,8 +460,9 @@ label {
     nav ul li a:hover {
         color: var(--vermelhoLayout)
     }
-     /* Destaque */
-     #destaque {
+
+    /* Destaque */
+    #destaque {
         height: 75vh;
     }
 
@@ -536,40 +481,26 @@ label {
     }
 
     #textoIntro h1 {
-        font-size: 2em;
-    }
-
-    /* Instagram */
-    #textoInstagram h2 {
-        font-size: 2em;
-    }
-
-    #textoInstagram p {
-        font-size: 1.25em;
-        margin-bottom: 50px;
-    }
-
-    #imagemInstagram img {
-        margin-left: 100px;        
+        font-size: em;
     }
 
     /* Projetos */
     #projetos h2 {
         font-size: 2.5em;
-        font-weight: 500;       
-}
+        font-weight: 500;
+    }
 
-/* Banner */
+    /* Banner */
 
-main h1 {
-    font-size: 4.0em;
-}
+    main h1 {
+        font-size: 4.0em;
+    }
 
-main h2 {
-    font-size: 3.0em;
-    text-shadow:#000000 0.5em 0.5em 0.5em;
+    main h2 {
+        font-size: 3.0em;
+        text-shadow: #000000 0.5em 0.5em 0.5em;
 
-}
+    }
 }
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
@@ -578,12 +509,12 @@ main h2 {
     /* Cabeçalho */
     header {
         height: 150px;
-        background-color:#ffffff;
+        background-color: #ffffff;
     }
 
     #logo img {
         width: 200px;
-        height: 200px; 
+        height: 200px;
         margin: -30px 0px 0px 0px;
     }
 }
