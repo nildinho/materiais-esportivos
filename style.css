@@ -105,12 +105,12 @@ body {
     color: var(--BrancoLayout);
     padding: 10px 100px;
     border-radius: 25px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 700;
 
 }
 .BannerPaginas{
-    height: 40vh;
+    height: 50vh;
     background: url(./img/banner.jpg);
     background-size: cover;
     background-position: center;
@@ -204,7 +204,7 @@ nav ul li a {
 /* banner */
 main {
     background: url(img/banner.jpg);
-    height: 80vh;
+    height: 50em;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -219,7 +219,7 @@ h2 {
 
 main h1 {
     font-family: "Bebas Neue", "Hind Siliguri";
-    font-weight: 700;
+    font-weight: 800;
     margin: 0;
     color: var(--BrancoLayout);
 }
@@ -242,21 +242,23 @@ main h2 {
     display: none;
 }
 
-#textointro {
+#textoIntro {
     color: var(--preto);
+    font-size: 1em;
 }
 
 
 #textoIntro h1 {
     font-family: "Bebas Neue", "Hind Siliguri";
     text-shadow: 0 0 5px var(--cinzaTexto);
-    font-weight: 400;
-    font-size: 1.5em;
+    font-weight: 700;
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
 .TopicosIntro {
-    margin-top: 10px;
+    margin-top: 20px;
+    font-size: 20px;
 }
 
 .TopicosIntro img {
@@ -264,13 +266,14 @@ main h2 {
 }
 
 #textoIntro p {
-    font-weight: 500;
+    font-weight: 400;
     text-shadow: 0 0 5px var(--cinzaTexto);
+    
 }
 
 
 #destacado {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 
@@ -305,9 +308,9 @@ footer {
 /** Página Sobre ***/
 
 #textoSobre h2 {
-    margin: 20px 0px;
+    margin: 50px 0px;
     font-size: 1.5em;
-    font-weight:600;
+    font-weight:500;
 }
 
 #textoSobre h3 {   
@@ -398,7 +401,7 @@ nav ul {
 /* Banner */
 main h1 {
     font-size: 2.0em;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 25px;
 }
 
@@ -418,6 +421,14 @@ label {
     height: 5px;
     color: rgba(67, 67, 67, 0.9);
 }
+
+
+#textoDestaque {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
 
 
 
@@ -531,7 +542,7 @@ label {
     }
 
     #textoIntro h1 {
-        font-size: 1em;
+        font-size: 2em;
     }
 
     /* Projetos */
@@ -543,7 +554,8 @@ label {
     /* Banner */
 
     main h1 {
-        font-size: 4.0em;
+        font-size: 5.0em;
+        text-shadow: #000000 0.5em 0.5em 0.5em;
     }
 
     main h2 {
