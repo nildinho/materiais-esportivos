@@ -8,6 +8,8 @@
 
 # materiais-esportivos
 Este repositório hospeda o projeto do site materiaisesportivos.com
+## Acessar site
+![Qrcode](https://github.com/nildinho/materiais-esportivos/blob/main/doc/qrcode_nildinho.github.io.png)
 ## Author 
 Vanildo Lima
 ## Links Utilizados 
