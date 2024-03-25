@@ -170,7 +170,7 @@ label {
 
 nav ul {
     list-style: none;
-    background-color: rgba(60, 60, 60, 0.95);
+    background-color: rgba(73, 72, 72, 0.95);
     height: 100vh;
     position: fixed;
     top: 80px;
@@ -178,6 +178,7 @@ nav ul {
     /*estratégia para recolher o menu*/
     width: 70%;
     transition: all 0.5s;
+    z-index: 1;
 }
 
 /* ativar o checkbox refernte a ul*/
@@ -188,7 +189,7 @@ nav ul {
 nav ul li {
     border-bottom: 0.5px solid var(--backgroundCard);
     text-align: right;
-    padding: 15px;
+    padding: 8px;
 
 }
 
@@ -207,7 +208,7 @@ nav ul li a {
 /* banner */
 main {
     background: url(img/banner2.jpg);
-    height: 40em;
+    height: 50em;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -263,6 +264,7 @@ main h2 {
     margin-top: 10px;
     font-size: 30px;
 }
+
 
 .TopicosIntro img {
     margin-right: 10px;
@@ -321,6 +323,7 @@ footer {
     margin: 20px 0px;
     font-size: 1.2em;
     font-weight: 500;
+    border-radius: 50%;
 }
 
 #textoSobre ol {
@@ -332,6 +335,7 @@ footer {
     font-weight: 500;
     font-size: 1em;
 }
+
 
 /** smartphone landscape>>>>>>>>>>>>>>>>>*/
 @media(min-width: 576px) {
@@ -432,6 +436,8 @@ label {
     font-weight: 500;
     margin-bottom: 10px;
 }
+
+
 
 
 
