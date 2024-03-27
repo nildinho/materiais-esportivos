@@ -95,6 +95,7 @@ body {
     border: 1px solid var(--bordaLayout);
     border-radius: 25px;
     text-align: center;
+    padding: 10px;
 }
 
 .Card img {
@@ -217,7 +218,7 @@ nav ul li a {
 /* banner */
 main {
     background: url(img/banner2.jpg);
-    height: 50em;
+    height: 30em;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -244,7 +245,7 @@ main h2 {
 
 /* Introdução  */
 #intro {
-    background: var(--cinzaClaroLayout);
+    background: url(img/intro.jpg);
     background-size: cover;
     background-position: center;
     height: 510pt;
@@ -257,6 +258,7 @@ main h2 {
 #textoIntro {
     color: var(--preto);
     font-size: 1.5em;
+    text-shadow: #000000 8.0em 8.0em;
 }
 
 
