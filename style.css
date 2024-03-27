@@ -239,7 +239,6 @@ main h2 {
     background-size: cover;
     background-position: center;
     height: 510pt;
-    
 }
 
 #destaqueIntro {
@@ -314,24 +313,25 @@ footer {
 /** Página Sobre ***/
 
 #textoSobre h2 {
-    margin: 50px 0px;
-    font-size: 1.5em;
+    margin: 30px 0px;
+    font-size: 2.0em;
     font-weight:500;
 }
 
 #textoSobre h3 {   
     margin: 20px 0px;
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: 500;
     border-radius: 50%;
 }
 
 #textoSobre ol {
-    margin-left: 20px;
+    margin-left: 0px;
+    margin: 10px;
 }
 
 #textoSobre h4 {
-    margin-top: 10px;    
+    margin-top: 50px;    
     font-weight: 500;
     font-size: 1em;
 }
