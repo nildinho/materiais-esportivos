@@ -46,6 +46,15 @@ body {
     padding: 50px 15px 50px 15px;
 }
 
+.Containersobre {
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 .Flex,
 .FlexMenu,
 .FlexCard,
@@ -335,7 +344,6 @@ footer {
     font-weight: 500;
     font-size: 1em;
 }
-
 
 /** smartphone landscape>>>>>>>>>>>>>>>>>*/
 @media(min-width: 576px) {
