@@ -67,6 +67,7 @@ body {
 .Flex,
 .FlexPage {
     flex-direction: column;
+    align-items: center;
 
 
 }
@@ -324,27 +325,21 @@ footer {
 /** Página Sobre ***/
 
 #textoSobre h2 {
-    margin: 30px 0px;
-    font-size: 2.0em;
-    font-weight:500;
+    margin: 15px 0px ;
+    font-size: 3em;
+    font-weight:700;
 }
 
-#textoSobre h3 {   
-    margin: 20px 0px;
-    font-size: 2em;
-    font-weight: 500;
-    border-radius: 50%;
+#textoSobre p {   
+    margin: 15px 0px;
+    font-size: 1.6em;
+    font-weight: 400;
 }
 
-#textoSobre ol {
-    margin-left: 0px;
-    margin: 10px;
-}
-
-#textoSobre h4 {
-    margin-top: 50px;    
-    font-weight: 500;
-    font-size: 1em;
+#imagemSobre img {
+    margin-right: 20px;
+    border-radius: 90%;
+    
 }
 
 /** smartphone landscape>>>>>>>>>>>>>>>>>*/
@@ -488,12 +483,14 @@ label {
         font-size: 2em;
     }
      /*** Página Sobre ***/
-     .FlexPage {
+    .FlexPage {
         flex-direction: row;
     }
 
-    #imagemSobre {
-        margin-right: 50px;
+    #imagemSobre img {
+        margin-right: 20px;
+        border-radius: 90%;
+
     }
 }
 
@@ -583,6 +580,10 @@ label {
         text-shadow: #000000 0.5em 0.5em 0.5em;
 
     }
+    #imagemSobre img {
+        margin-right: 20px;
+        border-radius: 90%;
+    }
 }
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
@@ -590,13 +591,13 @@ label {
 
     /* Cabeçalho */
     header {
-        height: 150px;
+        height: 130px;
         background-color: #ffffff;
     }
 
     #logo img {
         width: 200px;
         height: 200px;
-        margin: -30px 0px 0px 10px;
+        margin: -30px 0px 0px 30px;
     }
 }
