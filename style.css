@@ -91,7 +91,7 @@ body {
 .Card {
     margin-top: 20px;
     width: 300px;
-    height: 320px;
+    height: 305px;
     background-color: var(--backgroundCard);
     border: 1px solid var(--bordaLayout);
     border-radius: 25px;
@@ -104,12 +104,13 @@ body {
 }
 
 .Card h3 {
-    margin: 15px 30px 0px 0px;
+    margin: 0px 30px 0px 0px;
+    text-align: center;
 }
 
 .Card p {
-    padding: 10px 15px 50px 15px;
-    text-align: left;
+    padding: 5px 15px 50px 15px;
+    text-align:CENTER;
     color: var(--cinzaTexto);
 }
 
