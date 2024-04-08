@@ -17,9 +17,9 @@ dolha de estilo materiais esportivos
     --vermelhoLayout: #c00000;
     --BrancoLayout: #f8f8f8ff;
     --AzulescuroLayout: #013858;
-    --AzulBebeLayout:#1584a2;
-    --VerdeAguaLayout:#90ee90;
-    --cinzaClaroLayout:#d3d3d3;
+    --AzulBebeLayout: #1584a2;
+    --VerdeAguaLayout: #90ee90;
+    --cinzaClaroLayout: #d3d3d3;
 }
 
 /* CSS RESET */
@@ -91,7 +91,7 @@ body {
 .Card {
     margin-top: 20px;
     width: 300px;
-    height: 305px;
+    height: 300px;
     background-color: var(--backgroundCard);
     border: 1px solid var(--bordaLayout);
     border-radius: 25px;
@@ -110,7 +110,7 @@ body {
 
 .Card p {
     padding: 5px 15px 50px 15px;
-    text-align:CENTER;
+    text-align: CENTER;
     color: var(--cinzaTexto);
 }
 
@@ -124,7 +124,8 @@ body {
     font-weight: 700;
 
 }
-.BannerPaginas{
+
+.BannerPaginas {
     height: 50vh;
     background: url(./img/banner2.jpg);
     background-size: cover;
@@ -133,11 +134,11 @@ body {
 }
 
 .BannerPaginas h1 {
-        color: var(--BrancoLayout);   
-        font-weight: 500;
-        font-size: 2.75em;
-        text-shadow: #000000 0.05em 0.05em 0.5em;
-    }
+    color: var(--BrancoLayout);
+    font-weight: 500;
+    font-size: 2.75em;
+    text-shadow: #000000 0.05em 0.05em 0.5em;
+}
 
 
 /* Topo */
@@ -286,7 +287,7 @@ main h2 {
 #textoIntro p {
     font-weight: 400;
     text-shadow: 0 0 5px var(--cinzaTexto);
-    
+
 }
 
 
@@ -326,12 +327,12 @@ footer {
 /** Página Sobre ***/
 
 #textoSobre h2 {
-    margin: 15px 0px ;
+    margin: 15px 0px;
     font-size: 3em;
-    font-weight:700;
+    font-weight: 700;
 }
 
-#textoSobre p {   
+#textoSobre p {
     margin: 15px 0px;
     font-size: 1.6em;
     font-weight: 400;
@@ -340,8 +341,93 @@ footer {
 #imagemSobre img {
     margin-right: 20px;
     border-radius: 90%;
-    
+
 }
+
+.CardProject {
+    margin-top: 30px;
+    width: 338px;
+    height: 260px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--branco);
+}
+
+.CardProject a {
+    text-decoration: none;
+    color: var(--cinzaEscuro);
+}
+
+.CardProject h3 {
+    color: var(--AzulBebeLayout);
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.CardProject p {
+    padding: 15px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: -400px;
+}
+.container a {
+    text-decoration: none;
+    font-size: 1.3em;
+    margin-left: 10px;
+    color: #000000;
+}
+
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    top: 500px;
+
+}
+
+.container2 h1 {
+    margin-left: 140px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /*compatibiliza o tamanho das caixas com o box model */
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #0066ff;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: none;
+}
+
+input[type="reset"] {
+    background-color: #ff9100;
+}
+
+#formulario {
+    display:none;
+}
+
 
 /** smartphone landscape>>>>>>>>>>>>>>>>>*/
 @media(min-width: 576px) {
@@ -368,7 +454,8 @@ footer {
         margin: 0;
 
     }
-    }
+}
+
 
 
 /** tablet portrait >>>>>>>>>>>>>>>>>>>>>*/
@@ -456,6 +543,7 @@ label {
 
 
 
+
 /** tablet landscape >>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
 
@@ -483,7 +571,8 @@ label {
     #projetos h2 {
         font-size: 2em;
     }
-     /*** Página Sobre ***/
+
+    /*** Página Sobre ***/
     .FlexPage {
         flex-direction: row;
     }
@@ -581,11 +670,13 @@ label {
         text-shadow: #000000 0.5em 0.5em 0.5em;
 
     }
+
     #imagemSobre img {
         margin-right: 20px;
         border-radius: 90%;
     }
 }
+
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
 @media (min-width: 1400px) {
