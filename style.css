@@ -428,6 +428,31 @@ input[type="reset"] {
     display:none;
 }
 
+#textoAdidas h2 {
+    margin: 15px 0px;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#textoAdidas p {
+    margin: 15px 0px;
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+#imagemAdidas img {
+    background: url(img/Adidas-Logo.png);
+    height: 30em;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-right: 25px;
+    max-height: 300px;
+    border-radius: 50%;
+}
+
+
+
 
 /** smartphone landscape>>>>>>>>>>>>>>>>>*/
 @media(min-width: 576px) {
