@@ -41,16 +41,29 @@ body {
     font-size: 1em;
 }
 
-.Container {
+
+
+.Container  {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
 }
+
+.Container2 {
+    margin: 0 auto;
+    padding: 115px 15px 115px 15px;
+}
+
 
 .Containersobre {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
     display: flex;
     flex-direction: row;
+}
+
+.Container3 {
+        margin: 0 auto;
+        padding: 50px 15px 50px 15px;
 }
 
 
@@ -104,13 +117,13 @@ body {
 }
 
 .Card h3 {
-    margin: 0px 30px 0px 0px;
+    margin: 0px 0px 0px 0px;
     text-align: center;
 }
 
 .Card p {
     padding: 5px 15px 50px 15px;
-    text-align: CENTER;
+    text-align: center;
     color: var(--cinzaTexto);
 }
 
@@ -202,7 +215,7 @@ nav ul {
 nav ul li {
     border-bottom: 0.5px solid var(--backgroundCard);
     text-align: right;
-    padding: 14px;
+    padding: 2.0vh;
 
 }
 
@@ -343,7 +356,6 @@ footer {
     border-radius: 90%;
 
 }
-
 .CardProject {
     margin-top: 30px;
     width: 338px;
@@ -432,23 +444,19 @@ input[type="reset"] {
     margin: 15px 0px;
     font-size: 3em;
     font-weight: 700;
+    text-align: center;
 }
 
 #textoAdidas p {
     margin: 15px 0px;
     font-size: 1.6em;
     font-weight: 400;
+    text-align: left;
 }
 
 #imagemAdidas img {
-    background: url(img/Adidas-Logo.png);
-    height: 30em;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    margin-right: 25px;
-    max-height: 300px;
-    border-radius: 50%;
+    margin-right: 20px;
+    border-radius: 90%;
 }
 
 
