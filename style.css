@@ -186,7 +186,7 @@ nav ul {
     background-color: rgba(73, 72, 72, 0.95);
     height: 100vh;
     position: fixed;
-    top: 80px;
+    top: 70px;
     right: -70%;
     /*estratégia para recolher o menu*/
     width: 70%;
@@ -202,7 +202,7 @@ nav ul {
 nav ul li {
     border-bottom: 0.5px solid var(--backgroundCard);
     text-align: right;
-    padding: 8px;
+    padding: 14px;
 
 }
 
