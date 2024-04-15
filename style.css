@@ -43,7 +43,7 @@ body {
 
 
 
-.Container  {
+.Container {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
 }
@@ -62,10 +62,12 @@ body {
 }
 
 .Container3 {
-        margin: 0 auto;
-        padding: 50px 15px 50px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px 15px 50px 15px;
 }
-
 
 
 .Flex,
@@ -114,11 +116,13 @@ body {
 
 .Card img {
     border-radius: 25px 25px 0px 0px;
+
 }
 
 .Card h3 {
     margin: 0px 0px 0px 0px;
     text-align: center;
+    padding: 5px;
 }
 
 .Card p {
@@ -356,6 +360,7 @@ footer {
     border-radius: 90%;
 
 }
+
 .CardProject {
     margin-top: 30px;
     width: 338px;
@@ -390,6 +395,7 @@ footer {
     margin: 0 auto;
     margin-top: -400px;
 }
+
 .container a {
     text-decoration: none;
     font-size: 1.3em;
@@ -436,10 +442,6 @@ input[type="reset"] {
     background-color: #ff9100;
 }
 
-#formulario {
-    display:none;
-}
-
 #textoAdidas h2 {
     margin: 15px 0px;
     font-size: 3em;
@@ -454,10 +456,100 @@ input[type="reset"] {
     text-align: left;
 }
 
+#imagemAdidas {
+    display: flex;
+    justify-content: center;
+}
+
 #imagemAdidas img {
     margin-right: 20px;
-    border-radius: 90%;
+    border-radius: 90%; 
 }
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 210px;
+}
+
+#formulario2 {
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: -210px;
+}
+.Container5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px 15px 50px 15px;
+}
+
+#textoNewbalance h2{
+    margin: 15px 0px;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+#textoNewbalance p {
+    margin: 15px 0px;
+    font-size: 1.6em;
+    font-weight: 400;
+    text-align: left;
+}
+
+#imagemNewbalance {
+    display: flex;
+    justify-content: center;
+}
+
+#imagemNewbalance img {
+    margin-right: 20px;
+    border-radius: 90%; 
+}
+
+.Container6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px 15px 50px 15px;
+}
+
+#textoNike h2,
+#textoPuma h2 {
+    margin: 15px 0px;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+#textoNike p,
+#textoPuma p {
+    margin: 15px 0px;
+    font-size: 1.6em;
+    font-weight: 400;
+    text-align: left;
+}
+
+#imagemNike,
+#imagemPuma {
+    display: flex;
+    justify-content: center;
+}
+
+#imagemNike img,
+#imagemPuma img {
+    margin-right: 20px;
+    border-radius: 90%; 
+}
+
+
 
 
 
