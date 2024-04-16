@@ -523,14 +523,16 @@ input[type="reset"] {
 }
 
 #textoNike h2,
-#textoPuma h2 {
+#textoPuma h2,
+#textoUnderArmour h2 {
     margin: 15px 0px;
     font-size: 3em;
     font-weight: 700;
     text-align: center;
 }
 #textoNike p,
-#textoPuma p {
+#textoPuma p,
+#textoUnderArmour p {
     margin: 15px 0px;
     font-size: 1.6em;
     font-weight: 400;
@@ -538,13 +540,15 @@ input[type="reset"] {
 }
 
 #imagemNike,
-#imagemPuma {
+#imagemPuma,
+#imagemUnderArmour {
     display: flex;
     justify-content: center;
 }
 
 #imagemNike img,
-#imagemPuma img {
+#imagemPuma img, 
+#imagemUnderArmour img {
     margin-right: 20px;
     border-radius: 90%; 
 }
