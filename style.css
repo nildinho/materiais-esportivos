@@ -152,8 +152,8 @@ body {
 
 .BannerPaginas h1 {
     color: var(--BrancoLayout);
-    font-weight: 500;
-    font-size: 2.75em;
+    font-weight: 700;
+    font-size: 2.90em;
     text-shadow: #000000 0.05em 0.05em 0.5em;
 }
 
@@ -553,9 +553,140 @@ input[type="reset"] {
     border-radius: 90%; 
 }
 
+.Container7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px 15px 50px 15px;
+}
+
+#textoFutebol h2,
+#textoBasquete h2,
+#textoAtletismo h2,
+#textoGolfe h2,
+#textoNatacao h2,
+#textoTenis h2 {
+    margin: 15px 0px;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+#textoFutebol h3,
+#textoBasquete h3,
+#textoAtletismo h3,
+#textoGolfe h3,
+#textoNatacao h3,
+#textoTenis h3 {
+    margin: 15px 0px;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+#textoFutebol p,
+#textoBasquete p,
+#textoAtletismo p,
+#textoGolfe p,
+#textoNatacao p,
+#textoTenis p {
+    margin: 15px 0px;
+    font-size: 1.6em;
+    font-weight: 400;
+    text-align: left;
+}
+
+#textoFutebol li,
+#textoBasquete li,
+#textoAtletismo li,
+#textoGolfe li,
+#textoNatacao li,
+#textoTenis li {
+    margin: 15px 0px;
+    font-size: 1.6em;
+    font-weight: 400;
+    text-align: left;
+}
+
+#imagemFutebol,
+#imagemBasquete,
+#imagemAtletismo,
+#imagemGolfe,
+#imagemNatacao,
+#imagemTenis {
+    display:flex;
+    justify-content: center;
+}
+
+#imagemFutebol img,
+#imagemBasquete img,
+#imagemAtletismo img,
+#imagemGolfe img,
+#imagemNatacao img,
+#imagemTenis img {
+    margin-right: 20px;
+    border-radius: 90%;
+}
+
+.container8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px 15px 50px 15px;
+}
+
+#imagemFutebol2 {
+    display:flex;
+    justify-content: center;
+}
+
+#imagemFutebol2 img  {
+    margin-right: 20px;
+    border-radius: 90%;
+}
+
+#textoFutebol2 h2 {
+    margin: 15px 0px;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+#textoFutebol2 h3 {
+    margin: 15px 0px;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
 
 
-
+#textoFutebol2 li{
+    margin: 15px 0px;
+    font-size: 1.6em;
+    font-weight: 400;
+    text-align: left;
+}
+#textoFutebol2 h4{
+    margin: 15px 0px;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+#textoFutebol2 h5{
+    margin: 15px 0px;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+#textoFutebol2 h6{
+    margin: 15px 0px;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
 
 
 /** smartphone landscape>>>>>>>>>>>>>>>>>*/
